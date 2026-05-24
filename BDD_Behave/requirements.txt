@@ -1,0 +1,7 @@
+behave==1.2.6
+selenium==4.18.1
+webdriver-manager==4.0.1
+openpyxl==3.1.2
+configparser==6.0.0
+Pillow==10.2.0
+allure-behave==2.13.5

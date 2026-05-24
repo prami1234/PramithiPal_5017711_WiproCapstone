@@ -1,0 +1,23 @@
+Feature: End-to-End Ixigo Bus Booking # features/e2e/e2e_test.feature:1
+
+  @e2e
+  Scenario: Complete bus booking flow till payment page           # features/e2e/e2e_test.feature:4
+    Given user launches the browser                               # features/steps/e2e_steps.py:14
+    When user opens ixigo homepage                                # features/steps/e2e_steps.py:29
+    And user handles the homepage popup                           # features/steps/e2e_steps.py:34
+    And user logs in with mobile number                           # features/steps/e2e_steps.py:39
+    And user completes otp manually                               # features/steps/e2e_steps.py:47
+    Then user should be logged in or login modal should be closed # features/steps/e2e_steps.py:52
+    When user opens bus section                                   # features/steps/e2e_steps.py:59
+    And user enters source city                                   # features/steps/e2e_steps.py:64
+    And user enters destination city                              # features/steps/e2e_steps.py:69
+    And user selects travel date                                  # features/steps/e2e_steps.py:74
+    And user searches buses                                       # features/steps/e2e_steps.py:79
+    And user applies bus filters                                  # features/steps/e2e_steps.py:84
+    And user selects seat                                         # features/steps/e2e_steps.py:92
+    And user continues booking                                    # features/steps/e2e_steps.py:99
+    And user enters passenger details                             # features/steps/e2e_steps.py:104
+    And user proceeds to payment                                  # features/steps/e2e_steps.py:117
+    Then payment page should open                                 # features/steps/e2e_steps.py:122
+    And user closes the browser                                   # features/steps/e2e_steps.py:129
+

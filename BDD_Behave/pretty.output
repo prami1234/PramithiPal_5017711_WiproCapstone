@@ -1,0 +1,294 @@
+Feature: Ixigo Bus Module Positive and Negative Test Cases # features/testcases/test_cases.feature:1
+
+  @positive
+  Scenario: TC01 Positive - Valid login test case  # features/testcases/test_cases.feature:4
+    Given user launches browser for testcases      # features/steps/test_cases_steps.py:15
+    When user opens ixigo homepage for testcase    # features/steps/test_cases_steps.py:33
+    And user handles popup for testcase            # features/steps/test_cases_steps.py:39
+    And user performs login for testcase           # features/steps/test_cases_steps.py:45
+    Then login should be successful for testcase   # features/steps/test_cases_steps.py:68
+
+  @positive
+  Scenario: TC02 Positive - Valid bus search test case  # features/testcases/test_cases.feature:12
+    Given user launches browser for testcases           # features/steps/test_cases_steps.py:15
+    When user opens ixigo homepage for testcase         # features/steps/test_cases_steps.py:33
+    And user opens buses page for testcase              # features/steps/test_cases_steps.py:76
+    And user enters valid source city                   # features/steps/test_cases_steps.py:82
+      Traceback (most recent call last):
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\test_cases_steps.py", line 85, in step_impl
+          BusPage(context.driver).enter_source(
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 62, in enter_source
+          self._type_city_and_select_first(self.SOURCE_INPUT, source, "Source")
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 47, in _type_city_and_select_first
+          city_input.click()
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+          self._execute(Command.CLICK_ELEMENT)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+          return self._parent.execute(command, params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="text" placeholder="Leaving From" tabindex="0" value=""> is not clickable at point (166, 219). Other element would receive the click: <div class="abrs-backdrop"></div>
+        (Session info: chrome=148.0.7778.179)
+      Stacktrace:
+      	chromedriver!GetHandleVerifier [0x7ff707e57de5+14895]
+      	chromedriver!GetHandleVerifier [0x7ff707e57e50+14900]
+      	chromedriver!(No symbol) [0x7ff707bbd5ad]
+      	chromedriver!(No symbol) [0x7ff707c1f3b5]
+      	chromedriver!(No symbol) [0x7ff707c1cfca]
+      	chromedriver!(No symbol) [0x7ff707c1a307]
+      	chromedriver!(No symbol) [0x7ff707c191b7]
+      	chromedriver!(No symbol) [0x7ff707c0bce6]
+      	chromedriver!(No symbol) [0x7ff707c4005a]
+      	chromedriver!(No symbol) [0x7ff707c0b566]
+      	chromedriver!(No symbol) [0x7ff707c6486f]
+      	chromedriver!(No symbol) [0x7ff707c09df8]
+      	chromedriver!(No symbol) [0x7ff707c0ace3]
+      	chromedriver!GetHandleVerifier [0x7ff70816cc49+3296f9]
+      	chromedriver!GetHandleVerifier [0x7ff708167375+323e25]
+      	chromedriver!GetHandleVerifier [0x7ff70818bc82+348732]
+      	chromedriver!GetHandleVerifier [0x7ff707e76045+32af5]
+      	chromedriver!GetHandleVerifier [0x7ff707e7ecec+3b79c]
+      	chromedriver!GetHandleVerifier [0x7ff707e61bc4+1e674]
+      	chromedriver!GetHandleVerifier [0x7ff707e61d54+1e804]
+      	chromedriver!GetHandleVerifier [0x7ff707e460e7+2b97]
+      	KERNEL32!BaseThreadInitThunk [0x7ff94b83e957+17]
+      	ntdll!RtlUserThreadStart [0x7ff94c96427c+2c]
+
+    And user enters valid destination city              # None
+    And user selects valid travel date                  # None
+    And user searches buses for testcase                # None
+    Then valid buses should appear                      # None
+
+  @positive
+  Scenario: TC03 Positive - View seats test case  # features/testcases/test_cases.feature:23
+    Given user launches browser for testcases     # features/steps/test_cases_steps.py:15
+    When user opens ixigo homepage for testcase   # features/steps/test_cases_steps.py:33
+    And user opens buses page for testcase        # features/steps/test_cases_steps.py:76
+    And user enters valid source city             # features/steps/test_cases_steps.py:82
+      Traceback (most recent call last):
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\test_cases_steps.py", line 85, in step_impl
+          BusPage(context.driver).enter_source(
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 62, in enter_source
+          self._type_city_and_select_first(self.SOURCE_INPUT, source, "Source")
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 47, in _type_city_and_select_first
+          city_input.click()
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+          self._execute(Command.CLICK_ELEMENT)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+          return self._parent.execute(command, params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="text" placeholder="Leaving From" tabindex="0" value=""> is not clickable at point (166, 219). Other element would receive the click: <div class="abrs-backdrop"></div>
+        (Session info: chrome=148.0.7778.179)
+      Stacktrace:
+      	chromedriver!GetHandleVerifier [0x7ff707e57de5+14895]
+      	chromedriver!GetHandleVerifier [0x7ff707e57e50+14900]
+      	chromedriver!(No symbol) [0x7ff707bbd5ad]
+      	chromedriver!(No symbol) [0x7ff707c1f3b5]
+      	chromedriver!(No symbol) [0x7ff707c1cfca]
+      	chromedriver!(No symbol) [0x7ff707c1a307]
+      	chromedriver!(No symbol) [0x7ff707c191b7]
+      	chromedriver!(No symbol) [0x7ff707c0bce6]
+      	chromedriver!(No symbol) [0x7ff707c4005a]
+      	chromedriver!(No symbol) [0x7ff707c0b566]
+      	chromedriver!(No symbol) [0x7ff707c6486f]
+      	chromedriver!(No symbol) [0x7ff707c09df8]
+      	chromedriver!(No symbol) [0x7ff707c0ace3]
+      	chromedriver!GetHandleVerifier [0x7ff70816cc49+3296f9]
+      	chromedriver!GetHandleVerifier [0x7ff708167375+323e25]
+      	chromedriver!GetHandleVerifier [0x7ff70818bc82+348732]
+      	chromedriver!GetHandleVerifier [0x7ff707e76045+32af5]
+      	chromedriver!GetHandleVerifier [0x7ff707e7ecec+3b79c]
+      	chromedriver!GetHandleVerifier [0x7ff707e61bc4+1e674]
+      	chromedriver!GetHandleVerifier [0x7ff707e61d54+1e804]
+      	chromedriver!GetHandleVerifier [0x7ff707e460e7+2b97]
+      	KERNEL32!BaseThreadInitThunk [0x7ff94b83e957+17]
+      	ntdll!RtlUserThreadStart [0x7ff94c96427c+2c]
+
+    And user enters valid destination city        # None
+    And user selects valid travel date            # None
+    And user searches buses for testcase          # None
+    And user opens seat layout                    # None
+    Then available seats should appear            # None
+
+  @positive
+  Scenario: TC04 Positive - Payment page test case  # features/testcases/test_cases.feature:35
+    Given user launches browser for testcases       # features/steps/test_cases_steps.py:15
+    When user completes full booking flow           # features/steps/test_cases_steps.py:142
+      Traceback (most recent call last):
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\test_cases_steps.py", line 155, in step_impl
+          bus.enter_source(
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 62, in enter_source
+          self._type_city_and_select_first(self.SOURCE_INPUT, source, "Source")
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 47, in _type_city_and_select_first
+          city_input.click()
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+          self._execute(Command.CLICK_ELEMENT)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+          return self._parent.execute(command, params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="text" placeholder="Leaving From" tabindex="0" value=""> is not clickable at point (166, 219). Other element would receive the click: <div class="abrs-backdrop"></div>
+        (Session info: chrome=148.0.7778.179)
+      Stacktrace:
+      	chromedriver!GetHandleVerifier [0x7ff707e57de5+14895]
+      	chromedriver!GetHandleVerifier [0x7ff707e57e50+14900]
+      	chromedriver!(No symbol) [0x7ff707bbd5ad]
+      	chromedriver!(No symbol) [0x7ff707c1f3b5]
+      	chromedriver!(No symbol) [0x7ff707c1cfca]
+      	chromedriver!(No symbol) [0x7ff707c1a307]
+      	chromedriver!(No symbol) [0x7ff707c191b7]
+      	chromedriver!(No symbol) [0x7ff707c0bce6]
+      	chromedriver!(No symbol) [0x7ff707c4005a]
+      	chromedriver!(No symbol) [0x7ff707c0b566]
+      	chromedriver!(No symbol) [0x7ff707c6486f]
+      	chromedriver!(No symbol) [0x7ff707c09df8]
+      	chromedriver!(No symbol) [0x7ff707c0ace3]
+      	chromedriver!GetHandleVerifier [0x7ff70816cc49+3296f9]
+      	chromedriver!GetHandleVerifier [0x7ff708167375+323e25]
+      	chromedriver!GetHandleVerifier [0x7ff70818bc82+348732]
+      	chromedriver!GetHandleVerifier [0x7ff707e76045+32af5]
+      	chromedriver!GetHandleVerifier [0x7ff707e7ecec+3b79c]
+      	chromedriver!GetHandleVerifier [0x7ff707e61bc4+1e674]
+      	chromedriver!GetHandleVerifier [0x7ff707e61d54+1e804]
+      	chromedriver!GetHandleVerifier [0x7ff707e460e7+2b97]
+      	KERNEL32!BaseThreadInitThunk [0x7ff94b83e957+17]
+      	ntdll!RtlUserThreadStart [0x7ff94c96427c+2c]
+
+    Then payment page should load successfully      # None
+
+  @negative
+  Scenario: TC05 Negative - Invalid city test case  # features/testcases/test_cases.feature:41
+    Given user launches browser for testcases       # features/steps/test_cases_steps.py:15
+    When user opens ixigo homepage for testcase     # features/steps/test_cases_steps.py:33
+    And user opens buses page for testcase          # features/steps/test_cases_steps.py:76
+    And user enters invalid source city             # features/steps/test_cases_steps.py:203
+      Traceback (most recent call last):
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\test_cases_steps.py", line 206, in step_impl
+          BusPage(context.driver).enter_source(
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 62, in enter_source
+          self._type_city_and_select_first(self.SOURCE_INPUT, source, "Source")
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 47, in _type_city_and_select_first
+          city_input.click()
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+          self._execute(Command.CLICK_ELEMENT)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+          return self._parent.execute(command, params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="text" placeholder="Leaving From" tabindex="0" value=""> is not clickable at point (166, 219). Other element would receive the click: <div class="abrs-backdrop"></div>
+        (Session info: chrome=148.0.7778.179)
+      Stacktrace:
+      	chromedriver!GetHandleVerifier [0x7ff707e57de5+14895]
+      	chromedriver!GetHandleVerifier [0x7ff707e57e50+14900]
+      	chromedriver!(No symbol) [0x7ff707bbd5ad]
+      	chromedriver!(No symbol) [0x7ff707c1f3b5]
+      	chromedriver!(No symbol) [0x7ff707c1cfca]
+      	chromedriver!(No symbol) [0x7ff707c1a307]
+      	chromedriver!(No symbol) [0x7ff707c191b7]
+      	chromedriver!(No symbol) [0x7ff707c0bce6]
+      	chromedriver!(No symbol) [0x7ff707c4005a]
+      	chromedriver!(No symbol) [0x7ff707c0b566]
+      	chromedriver!(No symbol) [0x7ff707c6486f]
+      	chromedriver!(No symbol) [0x7ff707c09df8]
+      	chromedriver!(No symbol) [0x7ff707c0ace3]
+      	chromedriver!GetHandleVerifier [0x7ff70816cc49+3296f9]
+      	chromedriver!GetHandleVerifier [0x7ff708167375+323e25]
+      	chromedriver!GetHandleVerifier [0x7ff70818bc82+348732]
+      	chromedriver!GetHandleVerifier [0x7ff707e76045+32af5]
+      	chromedriver!GetHandleVerifier [0x7ff707e7ecec+3b79c]
+      	chromedriver!GetHandleVerifier [0x7ff707e61bc4+1e674]
+      	chromedriver!GetHandleVerifier [0x7ff707e61d54+1e804]
+      	chromedriver!GetHandleVerifier [0x7ff707e460e7+2b97]
+      	KERNEL32!BaseThreadInitThunk [0x7ff94b83e957+17]
+      	ntdll!RtlUserThreadStart [0x7ff94c96427c+2c]
+
+    And user enters invalid destination city        # None
+    Then invalid city validation should appear      # None
+
+  @negative
+  Scenario: TC06 Negative - No seats test case  # features/testcases/test_cases.feature:50
+    Given user launches browser for testcases   # features/steps/test_cases_steps.py:15
+    When user opens ixigo homepage for testcase # features/steps/test_cases_steps.py:33
+    And user opens buses page for testcase      # features/steps/test_cases_steps.py:76
+    And user enters valid source city           # features/steps/test_cases_steps.py:82
+      Traceback (most recent call last):
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\test_cases_steps.py", line 85, in step_impl
+          BusPage(context.driver).enter_source(
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 62, in enter_source
+          self._type_city_and_select_first(self.SOURCE_INPUT, source, "Source")
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\pages\bus_page.py", line 47, in _type_city_and_select_first
+          city_input.click()
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+          self._execute(Command.CLICK_ELEMENT)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+          return self._parent.execute(command, params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\PRAMITHI\PycharmProjects\WiproCapstone\BDD_Behave\.venv311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="text" placeholder="Leaving From" tabindex="0" value=""> is not clickable at point (166, 219). Other element would receive the click: <div class="abrs-backdrop"></div>
+        (Session info: chrome=148.0.7778.179)
+      Stacktrace:
+      	chromedriver!GetHandleVerifier [0x7ff707e57de5+14895]
+      	chromedriver!GetHandleVerifier [0x7ff707e57e50+14900]
+      	chromedriver!(No symbol) [0x7ff707bbd5ad]
+      	chromedriver!(No symbol) [0x7ff707c1f3b5]
+      	chromedriver!(No symbol) [0x7ff707c1cfca]
+      	chromedriver!(No symbol) [0x7ff707c1a307]
+      	chromedriver!(No symbol) [0x7ff707c191b7]
+      	chromedriver!(No symbol) [0x7ff707c0bce6]
+      	chromedriver!(No symbol) [0x7ff707c4005a]
+      	chromedriver!(No symbol) [0x7ff707c0b566]
+      	chromedriver!(No symbol) [0x7ff707c6486f]
+      	chromedriver!(No symbol) [0x7ff707c09df8]
+      	chromedriver!(No symbol) [0x7ff707c0ace3]
+      	chromedriver!GetHandleVerifier [0x7ff70816cc49+3296f9]
+      	chromedriver!GetHandleVerifier [0x7ff708167375+323e25]
+      	chromedriver!GetHandleVerifier [0x7ff70818bc82+348732]
+      	chromedriver!GetHandleVerifier [0x7ff707e76045+32af5]
+      	chromedriver!GetHandleVerifier [0x7ff707e7ecec+3b79c]
+      	chromedriver!GetHandleVerifier [0x7ff707e61bc4+1e674]
+      	chromedriver!GetHandleVerifier [0x7ff707e61d54+1e804]
+      	chromedriver!GetHandleVerifier [0x7ff707e460e7+2b97]
+      	KERNEL32!BaseThreadInitThunk [0x7ff94b83e957+17]
+      	ntdll!RtlUserThreadStart [0x7ff94c96427c+2c]
+
+    And user enters valid destination city      # None
+    And user selects valid travel date          # None
+    And user searches buses for testcase        # None
+    Then no seats condition should be handled   # None
+

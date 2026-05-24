@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","33597","TC02 Positive - Valid bus search test case","","2026-05-23","broken","2026-05-23","","","",""
+"","30787","TC06 Negative - No seats test case","","2026-05-23","broken","2026-05-23","","","",""
+"","32901","TC03 Positive - View seats test case","","2026-05-23","broken","2026-05-23","","","",""
+"","35147","TC05 Negative - Invalid city test case","","2026-05-23","broken","2026-05-23","","","",""
+"","35889","TC04 Positive - Payment page test case","","2026-05-23","broken","2026-05-23","","","",""
+"","82904","TC01 Positive - Valid login test case","","2026-05-23","passed","2026-05-23","","","",""
