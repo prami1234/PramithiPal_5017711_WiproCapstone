@@ -1,0 +1,12 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","73609","TC3 -- View Seats: Available seat visible on results page","test","2026-05-24","passed","2026-05-24","","test_positive_negative_tc","",""
+"
+    Negative test: verifies that no seats are available when the bus results
+    page is loaded but the seat layout panel has NOT been opened.
+    This is a meaningful negative check -- not a blank-page test.
+    ","71972","TC6 -- No Seats: Seat layout not opened, no seats should be found","test","2026-05-24","passed","2026-05-24","","test_positive_negative_tc","",""
+"Complete booking flow: login -> search -> filters -> seat -> passenger -> payment","232244","End-to-End Bus Booking Flow","test","2026-05-24","passed","2026-05-24","","test_end_to_end","",""
+"","72262","TC5 -- Invalid City: No results for non-existent source city","test","2026-05-24","passed","2026-05-24","","test_positive_negative_tc","",""
+"","71341","TC2 -- Valid Bus Search: Results load for Hyderabad -> Bangalore","test","2026-05-24","passed","2026-05-24","","test_positive_negative_tc","",""
+"","20683","TC1 -- Valid Login: Homepage loads with login button","test","2026-05-24","passed","2026-05-24","","test_positive_negative_tc","",""
+"","1409","TC4 -- Payment Page: ixigo site is reachable","test","2026-05-24","passed","2026-05-24","","test_positive_negative_tc","",""

@@ -1,0 +1,8 @@
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:191 TC6 -- test_no_seats started
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:40 Bus tab opened
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Leaving From selected: Hyderabad
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Going To selected: Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:65 Tomorrow's date selected
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:76 Search clicked for Hyderabad -> Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:91 Bus search results loaded for Hyderabad -> Bangalore
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:225 TC6 -- No seats available as expected (layout not opened)

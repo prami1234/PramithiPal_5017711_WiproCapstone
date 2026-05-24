@@ -1,0 +1,68 @@
+2026-05-24 11:52:06 | INFO | utils.logger | Test data loaded -- Hyderabad -> Bangalore, passenger: Pramithi
+2026-05-24 11:52:08 | INFO | utils.logger | Opened ixigo homepage
+2026-05-24 11:52:28 | INFO | pages.login_page | Login button clicked
+2026-05-24 11:52:48 | INFO | pages.login_page | Mobile number entered
+2026-05-24 11:52:48 | INFO | pages.login_page | Continue clicked — waiting for OTP
+2026-05-24 11:52:48 | INFO | pages.login_page | Waiting up to 120 seconds for manual OTP completion...
+2026-05-24 11:52:50 | INFO | pages.login_page | OTP completed successfully
+2026-05-24 11:52:50 | INFO | utils.logger | Login completed
+2026-05-24 11:53:56 | INFO | pages.bus_search_page | Bus tab opened
+2026-05-24 11:53:57 | INFO | pages.bus_search_page | Leaving From selected: Hyderabad
+2026-05-24 11:53:57 | INFO | pages.bus_search_page | Going To selected: Bangalore
+2026-05-24 11:53:59 | INFO | pages.bus_search_page | Tomorrow's date selected
+2026-05-24 11:53:59 | INFO | pages.bus_search_page | Search clicked for Hyderabad -> Bangalore
+2026-05-24 11:53:59 | INFO | pages.bus_search_page | Bus search results loaded for Hyderabad -> Bangalore
+2026-05-24 11:54:01 | INFO | utils.logger | Bus search completed
+2026-05-24 11:54:23 | INFO | pages.bus_results_page | Filter selected: ac
+2026-05-24 11:54:25 | INFO | pages.bus_results_page | Filter selected: sleeper
+2026-05-24 11:54:27 | INFO | pages.bus_results_page | Filter selected: 5 pm - 11 pm
+2026-05-24 11:54:28 | INFO | pages.bus_results_page | Filter section opened: Bus Partner
+2026-05-24 11:54:29 | INFO | pages.bus_results_page | Filter section opened: Boarding Point
+2026-05-24 11:54:30 | INFO | pages.bus_results_page | Filter section opened: Dropping Point
+2026-05-24 11:54:30 | INFO | pages.bus_results_page | Filters applied: AC, Sleeper, time slot, sections opened
+2026-05-24 11:54:52 | INFO | pages.bus_results_page | Select Seats clicked
+2026-05-24 11:54:55 | INFO | pages.bus_results_page | Seat selected: ₹1699
+2026-05-24 11:54:59 | INFO | pages.bus_results_page | Seat selected and Proceed clicked
+2026-05-24 11:54:59 | INFO | utils.logger | Bus filters and booking flow completed
+2026-05-24 11:55:19 | INFO | pages.passenger_page | Passenger details filled — name=Pramithi, age=23, gender=Female
+2026-05-24 11:55:20 | INFO | utils.logger | Passenger details filled
+2026-05-24 11:55:20 | WARNING | pages.passenger_page | Passenger continue button not found
+2026-05-24 11:55:20 | INFO | utils.logger | Passenger details submitted
+2026-05-24 11:55:58 | INFO | pages.payment_page | Payment page reached and verified
+2026-05-24 11:55:59 | INFO | utils.logger | Reached payment page
+2026-05-24 11:56:04 | INFO | utils.logger | TC1 -- test_valid_login started
+2026-05-24 11:56:25 | INFO | utils.logger | TC1 -- Login button visible, homepage loaded correctly
+2026-05-24 11:56:29 | INFO | utils.logger | TC2 -- test_valid_bus_search started
+2026-05-24 11:57:33 | INFO | pages.bus_search_page | Bus tab opened
+2026-05-24 11:57:33 | INFO | pages.bus_search_page | Leaving From selected: Hyderabad
+2026-05-24 11:57:34 | INFO | pages.bus_search_page | Going To selected: Bangalore
+2026-05-24 11:57:36 | INFO | pages.bus_search_page | Tomorrow's date selected
+2026-05-24 11:57:40 | INFO | pages.bus_search_page | Search clicked for Hyderabad -> Bangalore
+2026-05-24 11:57:40 | INFO | pages.bus_search_page | Bus search results loaded for Hyderabad -> Bangalore
+2026-05-24 11:57:41 | INFO | utils.logger | TC2 -- Bus search results page loaded successfully
+2026-05-24 11:57:46 | INFO | utils.logger | TC3 -- test_view_seats started
+2026-05-24 11:58:49 | INFO | pages.bus_search_page | Bus tab opened
+2026-05-24 11:58:50 | INFO | pages.bus_search_page | Leaving From selected: Hyderabad
+2026-05-24 11:58:50 | INFO | pages.bus_search_page | Going To selected: Bangalore
+2026-05-24 11:58:51 | INFO | pages.bus_search_page | Tomorrow's date selected
+2026-05-24 11:58:52 | INFO | pages.bus_search_page | Search clicked for Hyderabad -> Bangalore
+2026-05-24 11:58:54 | INFO | pages.bus_search_page | Bus search results loaded for Hyderabad -> Bangalore
+2026-05-24 11:58:56 | INFO | pages.bus_results_page | Select Seats clicked
+2026-05-24 11:58:59 | INFO | utils.logger | TC3 -- Available seat found and visible
+2026-05-24 11:59:04 | INFO | utils.logger | TC4 -- test_payment_page started
+2026-05-24 11:59:06 | INFO | utils.logger | TC4 -- ixigo site reachable, full payment flow covered in e2e test
+2026-05-24 11:59:10 | INFO | utils.logger | TC5 -- test_invalid_city started
+2026-05-24 12:00:14 | INFO | pages.bus_search_page | Bus tab opened
+2026-05-24 12:00:14 | INFO | pages.bus_search_page | Leaving From selected: INVALIDCITY123
+2026-05-24 12:00:15 | INFO | pages.bus_search_page | Going To selected: Bangalore
+2026-05-24 12:00:18 | INFO | pages.bus_search_page | Tomorrow's date selected
+2026-05-24 12:00:20 | INFO | pages.bus_search_page | Search clicked for INVALIDCITY123 -> Bangalore
+2026-05-24 12:00:21 | INFO | pages.bus_search_page | Bus search results loaded for INVALIDCITY123 -> Bangalore
+2026-05-24 12:00:27 | INFO | utils.logger | TC6 -- test_no_seats started
+2026-05-24 12:01:32 | INFO | pages.bus_search_page | Bus tab opened
+2026-05-24 12:01:33 | INFO | pages.bus_search_page | Leaving From selected: Hyderabad
+2026-05-24 12:01:33 | INFO | pages.bus_search_page | Going To selected: Bangalore
+2026-05-24 12:01:34 | INFO | pages.bus_search_page | Tomorrow's date selected
+2026-05-24 12:01:36 | INFO | pages.bus_search_page | Search clicked for Hyderabad -> Bangalore
+2026-05-24 12:01:37 | INFO | pages.bus_search_page | Bus search results loaded for Hyderabad -> Bangalore
+2026-05-24 12:01:39 | INFO | utils.logger | TC6 -- No seats available as expected (layout not opened)

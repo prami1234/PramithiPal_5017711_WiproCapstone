@@ -1,0 +1,9 @@
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:83 TC3 -- test_view_seats started
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:40 Bus tab opened
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Leaving From selected: Hyderabad
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Going To selected: Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:65 Tomorrow's date selected
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:76 Search clicked for Hyderabad -> Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:91 Bus search results loaded for Hyderabad -> Bangalore
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:108 Select Seats clicked
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:116 TC3 -- Available seat found and visible

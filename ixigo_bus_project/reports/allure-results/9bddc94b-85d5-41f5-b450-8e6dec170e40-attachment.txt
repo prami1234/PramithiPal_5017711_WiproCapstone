@@ -1,0 +1,2 @@
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:18 TC1 -- test_valid_login started
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:51 TC1 -- Login button visible, homepage loaded correctly

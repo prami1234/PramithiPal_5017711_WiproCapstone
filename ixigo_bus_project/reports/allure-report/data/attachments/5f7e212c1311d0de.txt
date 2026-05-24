@@ -1,0 +1,7 @@
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:146 TC5 -- test_invalid_city started
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:40 Bus tab opened
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Leaving From selected: INVALIDCITY123
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Going To selected: Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:65 Tomorrow's date selected
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:76 Search clicked for INVALIDCITY123 -> Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:91 Bus search results loaded for INVALIDCITY123 -> Bangalore

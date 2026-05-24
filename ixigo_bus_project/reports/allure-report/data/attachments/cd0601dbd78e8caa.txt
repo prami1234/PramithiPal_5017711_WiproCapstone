@@ -1,0 +1,2 @@
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:123 TC4 -- test_payment_page started
+[32mINFO    [0m utils.logger:test_positive_negative_tc.py:137 TC4 -- ixigo site reachable, full payment flow covered in e2e test

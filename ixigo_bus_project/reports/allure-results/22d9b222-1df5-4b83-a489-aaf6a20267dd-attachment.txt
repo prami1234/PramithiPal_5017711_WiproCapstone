@@ -1,0 +1,32 @@
+[32mINFO    [0m utils.logger:test_end_to_end.py:39 Test data loaded -- Hyderabad -> Bangalore, passenger: Pramithi
+[32mINFO    [0m utils.logger:test_end_to_end.py:54 Opened ixigo homepage
+[32mINFO    [0m pages.login_page:login_page.py:23 Login button clicked
+[32mINFO    [0m pages.login_page:login_page.py:40 Mobile number entered
+[32mINFO    [0m pages.login_page:login_page.py:46 Continue clicked — waiting for OTP
+[32mINFO    [0m pages.login_page:login_page.py:57 Waiting up to 120 seconds for manual OTP completion...
+[32mINFO    [0m pages.login_page:login_page.py:63 OTP completed successfully
+[32mINFO    [0m utils.logger:test_end_to_end.py:71 Login completed
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:40 Bus tab opened
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Leaving From selected: Hyderabad
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:51 Going To selected: Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:65 Tomorrow's date selected
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:76 Search clicked for Hyderabad -> Bangalore
+[32mINFO    [0m pages.bus_search_page:bus_search_page.py:91 Bus search results loaded for Hyderabad -> Bangalore
+[32mINFO    [0m utils.logger:test_end_to_end.py:88 Bus search completed
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:85 Filter selected: ac
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:85 Filter selected: sleeper
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:85 Filter selected: 5 pm - 11 pm
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:99 Filter section opened: Bus Partner
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:99 Filter section opened: Boarding Point
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:99 Filter section opened: Dropping Point
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:35 Filters applied: AC, Sleeper, time slot, sections opened
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:108 Select Seats clicked
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:127 Seat selected: ₹1699
+[32mINFO    [0m pages.bus_results_page:bus_results_page.py:62 Seat selected and Proceed clicked
+[32mINFO    [0m utils.logger:test_end_to_end.py:104 Bus filters and booking flow completed
+[32mINFO    [0m pages.passenger_page:passenger_page.py:37 Passenger details filled — name=Pramithi, age=23, gender=Female
+[32mINFO    [0m utils.logger:test_end_to_end.py:121 Passenger details filled
+[33mWARNING [0m pages.passenger_page:passenger_page.py:57 Passenger continue button not found
+[32mINFO    [0m utils.logger:test_end_to_end.py:139 Passenger details submitted
+[32mINFO    [0m pages.payment_page:payment_page.py:25 Payment page reached and verified
+[32mINFO    [0m utils.logger:test_end_to_end.py:157 Reached payment page
